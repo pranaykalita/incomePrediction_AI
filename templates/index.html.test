@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="{% url 'result' %}">
+        {% csrf_token %}
+        <input type="number" name="age" id="">
+        <input type="text" name="workclass" id="">
+        <input type="text" name="education" id="">
+        <input type="text" name="occupation" id="">
+        <input type="text" name="sex" id="">
+        <input type="number" name="WorkHour" id="">
+        <input type="text" name="country" id="">
+
+        <input type="submit" name="" value="PREDICT"></input>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="UTF-8">
+        <title> Tourism Recomendation |</title>
+        
+       </head>
+    <body>
+
+
+<h1>The result are here </h1>
+<h3>The Data you entered is : {{lis}}</h3>
+<h3> The category of the package is <span>{{ans}}</span></h3>
+<style>
+    span{
+        color: red;
+        font-size: 20px;
+    }
+</style>
+the result is {{ans}}
+        
+<form action="{%url 'index' %}">
+    <input type="submit" value="Predict another">
+</form>
+
+
+
+    </body>    

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'code.css' %}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Income Prediction</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm p-3 bg-primary">
+        <h3 class="navbar-brand text-light" id="headtitle">Region Based Income Prediction Using Census Data</h3>
+        </div>
+    </nav>
+
+    <!-- title -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <h1 class="text-center" id="titlemain">Income Prediction</h1>
+                <h2 class="text-center" id="subtitle"> predicting using AI ML model</h2>
+            </div>
+        </div>
+    </div>
+    <!-- forms -->
+    <div class="container pt-5">
+
+        <div class="row">
+            <!-- leftform -->
+            <div class="col m-3 " id="formleft">
+                <div class="bg-primary" id="formhead">
+                </div>
+
+                <form  action="{% url 'index' %}">
+                    <div class="row p-2">
+                        <div class="col d-flex justify-content-center">
+                            <h1 >PREDICTED INCOME IS</h1>
+                        </div>
+                    </div>
+                    <div class="row p-2">
+                        <div class="col d-flex justify-content-center">
+                            <h2 class="text text-danger">{{ans}}</h2>
+                            <!-- <h2 class="text text-danger">{{lis}}</h2> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center pt-4">
+                            <input type="submit" class="text-center btn btn-primary predbtn" value="PREDICT ANOTHER"></input>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
